@@ -52,12 +52,14 @@ $data_akhir = [
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>daftar Nilai Mahasiswa</title>
 </head>
+
 <body>
     <h1 class="text-center">Daftar Nilai Mahasiswa</h1>
     <div class="container">
@@ -124,18 +126,22 @@ $data_akhir = [
                 ?>
             </tbody>
             <tfoot>
-                    <?php
+                <?php
                         foreach ($data_akhir as $id => $value) {
                     ?>
-                    <tr>
-                        <td colspan='3' class='text-right'><?= $id ?></td>
-                        <td colspan='4' class='text-center fw-bold'><?= $value ?></td>
-                    </tr>
-                    <?php
+                <tr>
+                    <td colspan='3' class='text-right'><?= $id ?></td>
+                    <td colspan='4' class='text-center fw-bold'><?= $value ?></td>
+                </tr>
+                <?php
                         }
                     ?>
             </tfoot>
         </table>
     </div>
+    <footer>
+        <p>&copy; 2024 Rozir Wobari.</p>
+    </footer>
 </body>
+
 </html>
