@@ -57,7 +57,7 @@ $data_akhir = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>daftar Nilai Mahasiswa</title>
+    <title>Daftar Nilai Mahasiswa</title>
 </head>
 
 <body>
