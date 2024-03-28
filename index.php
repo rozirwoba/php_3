@@ -33,7 +33,7 @@ $daftar_mahasiswa = [
     $mahasiswa_15,
 ];
 
-$daftar_field = ['Nama', 'NIM', 'Nilai', 'Keterangan', 'Grade', 'Predikat'];
+$daftar_field = ['No', 'Nama', 'NIM', 'Nilai', 'Keterangan', 'Grade', 'Predikat'];
 $nilai_mahasiswa = array_column($daftar_mahasiswa, 'nilai');
 $total_nilai = array_sum($nilai_mahasiswa);
 $nilai_tertinggi = max($nilai_mahasiswa);
@@ -75,6 +75,7 @@ $data_akhir = [
             </thead>
             <tbody>
                 <?php
+                    $no = 1;
                     foreach ($daftar_mahasiswa as $value) {
                         if ($value['nilai'] >= 85) {
                             $grade = 'A';
@@ -110,6 +111,7 @@ $data_akhir = [
                         };
                 ?>
                 <tr>
+                    <td><?= $no++ ?></td>
                     <td><?= $value['nama'] ?></td>
                     <td><?= $value['nim'] ?></td>
                     <td><?= $value['nilai'] ?></td>
