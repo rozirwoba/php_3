@@ -10,7 +10,7 @@ $mahasiswa_8 = ["nama" => "David Wilson", "nim" => "01890123", "nilai" => 55];
 $mahasiswa_9 = ["nama" => "Sarah Garcia", "nim" => "01901234", "nilai" => 87];
 $mahasiswa_10 = ["nama" => "Matthew Rodriguez", "nim" => "01012345", "nilai" => 91];
 $mahasiswa_11 = ["nama" => "Laura Martinez", "nim" => "01123012", "nilai" => 84];
-$mahasiswa_12 = ["nama" => "Daniel Hernandez", "nim" => "01234123", "nilai" => 68];
+$mahasiswa_12 = ["nama" => "Daniel Hernandez", "nim" => "01234123", "nilai" => 1001];
 $mahasiswa_13 = ["nama" => "Jennifer Lopez", "nim" => "01345234", "nilai" => 70];
 $mahasiswa_14 = ["nama" => "Christopher Gonzalez", "nim" => "01456345", "nilai" => 92];
 $mahasiswa_15 = ["nama" => "Amanda Perez", "nim" => "01567456", "nilai" => 86];
@@ -87,8 +87,10 @@ $data_akhir = [
                             $grade = 'C';
                         } elseif ($value['nilai'] >= 50 && $value['nilai'] <= 64) {
                             $grade = 'D';
-                        } elseif ($value['nilai'] >= 0 && $value['nilai'] <= 44) {
+                        } elseif ($value['nilai'] >= 0 && $value['nilai'] <= 49) {
                             $grade = 'E';
+                        } else {
+                            $grade = 'Tidak Valid';
                         };
                         $keterangan = ($value['nilai'] >= 65) ? 'Lulus' : 'Gagal';
                         switch ($grade) {
