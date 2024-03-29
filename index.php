@@ -79,15 +79,15 @@ $data_akhir = [
                 <?php
                     $no = 1;
                     foreach ($daftar_mahasiswa as $value) {
-                        if ($value['nilai'] >= 85) {
+                        if ($value['nilai'] >= 85 && $value['nilai'] <= 100) {
                             $grade = 'A';
-                        } elseif ($value['nilai'] >= 75) {
+                        } elseif ($value['nilai'] >= 75 && $value['nilai'] <= 84) {
                             $grade = 'B';
-                        } elseif ($value['nilai'] >= 65) {
+                        } elseif ($value['nilai'] >= 65 && $value['nilai'] <= 74) {
                             $grade = 'C';
-                        } elseif ($value['nilai'] >= 50) {
+                        } elseif ($value['nilai'] >= 50 && $value['nilai'] <= 64) {
                             $grade = 'D';
-                        } elseif ($value['nilai'] >= 0) {
+                        } elseif ($value['nilai'] >= 0 && $value['nilai'] <= 44) {
                             $grade = 'E';
                         };
                         $keterangan = ($value['nilai'] >= 65) ? 'Lulus' : 'Gagal';
